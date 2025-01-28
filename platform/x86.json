@@ -1,0 +1,29 @@
+{
+  "x86": {
+    "call_branch": "call ~br~",
+    "conv": {
+      "stdcall": [
+        {
+          "callee": {
+            "prologue": [
+                "push rbp"
+            ],
+            "finish": [
+              "ret ~sarg~"
+            ],
+            "ld_args" :
+              "mov ~x~, ~y~"
+          },
+          "caller": {
+            "ld_args" :
+              "mov ~x~, ~v~"
+          }
+        }
+      ],
+      "cdecl": {
+        
+      }
+    }
+  }
+}
+  
